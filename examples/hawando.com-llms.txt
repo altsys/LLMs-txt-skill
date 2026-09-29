@@ -1,0 +1,20 @@
+# Alula Hawando
+
+> Personal website of Alula K. Hawando, a full-stack software developer, entrepreneur, and maker writing about software development, AI, learning, productivity, and the things he builds.
+
+## About
+
+- [Home](https://hawando.com): Introduction to Alula Hawando, his work, writing, and current interests.
+- [Now](https://hawando.com/now): What Alula is currently working on and thinking about.
+- [Projects](https://hawando.com/projects): Projects Alula has built or worked on.
+
+## Writing and Learning
+
+- [Tutorials](https://hawando.com/tutorials): Technical tutorials and learning notes.
+- [RSS](https://hawando.com/rss.xml): Feed of published writing.
+
+## Tools
+
+- [LLM Selector](https://hawando.com/llm-selector): Interactive tool for choosing AI models based on task, deployment, quality, and efficiency requirements.
+- [Cloud Mapper](https://hawando.com/cloud): Interactive cloud-related tool.
+- [Flashcards](https://hawando.com/flashcards): Learning and study tool.
