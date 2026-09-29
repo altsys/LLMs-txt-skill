@@ -1,6 +1,6 @@
 # LLMs.txt Skill
 
-A simple agent skill for generating concise, curated `llms.txt` files for websites.
+A portable agent skill for generating concise, curated `llms.txt` files for websites.
 
 The goal is **maximum useful coverage with minimum links**. It does not turn a sitemap into another sitemap-shaped file.
 
@@ -25,17 +25,37 @@ The skill was tested against Hawando.com. Rather than listing every article and 
 
 See [examples/hawando.com-llms.txt](examples/hawando.com-llms.txt) for the generated result.
 
-## Usage
+## Install in Codex
 
-The core instructions are in [SKILL.md](SKILL.md).
+This repository is also a Codex marketplace, so you can add it directly:
 
-Install or copy the skill into an agent environment that supports agent skills, then ask the agent to generate or improve an `llms.txt` for a website.
+```bash
+codex plugin marketplace add altsys/LLMs-txt-skill
+```
 
-Example:
+Then browse the marketplace and install the `llms-txt` plugin. The marketplace catalog lives at `.agents/plugins/marketplace.json`.
+
+After installation, ask Codex:
 
 ```text
-Generate an llms.txt for https://hawando.com
+Generate an llms.txt for https://example.com using the llms-txt skill.
 ```
+
+## Portable plugin structure
+
+```text
+plugin.json
+skills/
+  llms-txt/
+    SKILL.md
+.agents/
+  plugins/
+    marketplace.json
+examples/
+  hawando.com-llms.txt
+```
+
+The portable plugin manifest is `plugin.json`, and the reusable workflow lives in `skills/llms-txt/SKILL.md`.
 
 ## Philosophy
 
