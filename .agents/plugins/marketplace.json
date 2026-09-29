@@ -1,0 +1,21 @@
+{
+  "name": "altsys-plugins",
+  "interface": {
+    "displayName": "Altsys Plugins"
+  },
+  "plugins": [
+    {
+      "name": "llms-txt",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/altsys/LLMs-txt-skill.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
