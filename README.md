@@ -1,44 +1,48 @@
 # LLMs.txt Skill
 
-A simple skill for generating curated `llms.txt` files for websites.
+A simple agent skill for generating concise, curated `llms.txt` files for websites.
 
-The goal is not to dump every URL from a site. The skill tries to identify the smallest set of useful pages that gives an LLM a good understanding of the website.
+The goal is **maximum useful coverage with minimum links**. It does not turn a sitemap into another sitemap-shaped file.
 
 ## What it does
 
 Given a website, the skill:
 
-- Inspects the homepage and main navigation
-- Checks for an existing `llms.txt`
-- Looks for important hub pages, documentation, projects, guides, and other core content
-- Prioritizes high-value pages over exhaustive indexing
-- Usually limits the result to around 10 to 20 links
-- Produces a clean `llms.txt` file
+- Inspects the homepage, navigation, sitemap, and existing `llms.txt` when available
+- Finds high-value hub pages, documentation, projects, guides, and core content
+- Prefers pages that provide broad coverage or unique context
+- Uses up to 20 high-value links, and often fewer
+- Avoids duplicate URLs, thin pages, pagination, tracking URLs, and exhaustive indexing
+- Produces a concise `llms.txt`
 
 ## Example
 
 Ask your agent:
 
-> Generate an llms.txt file for https://hawando.com using this skill.
+> Generate an llms.txt for https://hawando.com using the llms-txt skill.
 
-For a personal site like Hawando, the skill should prefer a small number of pages that explain the site and provide access to deeper content instead of listing every blog post.
+The skill was tested against Hawando.com. Rather than listing every article and project, it selected a small set of pages that cover the site's main areas.
 
-For example, it may prioritize:
-
-- Homepage
-- About
-- Projects
-- Writing or blog index
-- Tutorials
-- Important tools or projects
-
-The exact links should be chosen by inspecting the current website.
+See [examples/hawando.com-llms.txt](examples/hawando.com-llms.txt) for the generated result.
 
 ## Usage
 
-Add `SKILL.md` to an agent or coding environment that supports skills, then ask it to generate or improve an `llms.txt` file for a website.
+The core instructions are in [SKILL.md](SKILL.md).
+
+Install or copy the skill into an agent environment that supports agent skills, then ask the agent to generate or improve an `llms.txt` for a website.
 
 Example:
 
 ```text
 Generate an llms.txt for https://hawando.com
+```
+
+## Philosophy
+
+A useful `llms.txt` should help an LLM understand and navigate a website without reproducing the entire sitemap.
+
+**Maximum useful coverage with minimum links.**
+
+## License
+
+MIT
