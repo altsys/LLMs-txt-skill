@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "llms-txt",
+  "version": "0.1.0",
+  "description": "Generate concise, curated llms.txt files for websites.",
+  "author": {
+    "name": "Altsys"
+  },
+  "repository": "https://github.com/altsys/LLMs-txt-skill",
+  "license": "MIT",
+  "keywords": ["llms.txt", "website", "ai", "agent-skill"]
+}
