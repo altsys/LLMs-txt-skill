@@ -44,17 +44,18 @@ Prefer pages that provide unique information or lead to substantial additional i
 
 ### 3. Keep the link set small
 
-Aim for **10 to 20 links** for a typical website.
+Aim for **up to 20 high-value links**. Many sites will need fewer.
 
-Use fewer links for small sites.
+Never add a link simply to meet a minimum.
+
+Each URL should normally appear only once in the file, even if it could fit under multiple sections.
 
 Exceed 20 only when the site's size or structure clearly requires it.
-
-Do not add links merely to reach a target.
 
 Avoid:
 
 - Duplicate or near-duplicate pages
+- Repeating the same URL in multiple sections
 - Pagination
 - Tag and category archives unless genuinely useful
 - Search result pages
@@ -83,7 +84,7 @@ Organize selected resources into clear H2 sections.
 
 Each resource should use this format:
 
-[Page title](URL): Short description of why this resource is useful.
+`[Page title](URL): Short description of why this resource is useful.`
 
 Keep descriptions factual and concise.
 
@@ -102,6 +103,8 @@ Before returning the file, verify that:
 - The links are valid
 - The most important parts of the site are represented
 - Hub pages are preferred where appropriate
+- Each URL normally appears only once
 - Low-value URLs have been excluded
+- No links were added merely to reach a target count
 - The file is concise
 - The result helps an LLM understand and navigate the site without trying to reproduce the entire sitemap
